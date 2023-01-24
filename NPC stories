@@ -1,0 +1,65 @@
+Story for the project
+
+*It must utilize HTML and CSS for the visuals
+
+*It must utilize JS for functions and generation
+
+*The look can be simplistic, much like an office document.
+
+*The required fields:
+  > Name
+  > Age
+  > Gender Identity
+  > Personality type
+  > Hobbies
+
+*There will also be an option for someone to fill in said areas on the display as well.
+
+*Should be an area that displays up to 3 NPCs
+
+----------------------html----------------------------
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>NPC Generator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  <h1>
+  NPC Generator
+  </h1>
+  <p>
+    Let's create life!
+  </p>
+  <fieldset>
+    <label for="npcNameField">
+      Give them a name:
+    <input id="npcNameField" name="npcNameField" type="text">     </label>
+    <label for="npcAgeField">
+    How old are they?
+      <input id="npcAgeField" name="npcAgeField" type="number">
+    </label>
+    <label for="npcGenderField">
+      What is their Gender Identity?
+      <input id="npcGenderField" name="npcGenderField" type="text">
+    </label>
+    <label for="personalityField">
+      What kind of Personality do they have?
+      <input id="personalityField" name="personalityField" type="text">
+    </label>
+    <label for="hobbiesField">
+      What are some of their hobbies?
+      <input type="text" name="hobbiesField" id="hobbiesField">
+    </label>
+  </fieldset>
+  <div>
+    <input type="button" value="Give Life Button">
+    <input type="button" value="Randomly Generate Life"
+  </div>
+<body>
+  <p>Here is where we will have a short list of 3 generated NPCs or One made one.</p>
+</body>
+
+</html>
