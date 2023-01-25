@@ -5,15 +5,24 @@ html, body {
 }
 
 body {
-  margin: 0;
-  background: #5E35B1;
   font-family: Apple Chancery;
   font-size: 16px;
+  background: linear-gradient( #5E35B1 0%,#3e1d70 100% );
 }
 
 h1, p {
   margin: 1em auto;
   text-align: center;
+}
+
+.pageHeader1 {
+  font-size: 40px;
+  font-weight: 10%;
+  text-decoration:underline;
+}
+
+.letsCreateLife {
+  font-size: 30px;
 }
 
 form {
@@ -56,15 +65,18 @@ input[type="button"] {
 
 /*new additions below*/
 #npcGeneratedArea {
-  align-items: center;
   display: block;
+  text-align: center;
 }
 
 .generatedNPC {
+  display: block;
   border: 5px outset darkviolet;
   background-color: #c99868; 
   text-align: center;
-  width: auto;
+  margin: auto;
+  width: 80%;  
+  padding: 10px;
 }
 
 .npcManualStats {
@@ -76,4 +88,9 @@ input[type="button"] {
 .labelWraps {
   display: inline-block;
   margin: 1em auto;
+}
+
+.spacer {
+  display: block;
+  height: 10px;
 }
