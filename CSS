@@ -53,3 +53,27 @@ input[type="button"] {
   border-color: lightgray;
   min-width: 300px;
 }
+
+/*new additions below*/
+#npcGeneratedArea {
+  align-items: center;
+  display: block;
+}
+
+.generatedNPC {
+  border: 5px outset darkviolet;
+  background-color: #c99868; 
+  text-align: center;
+  width: auto;
+}
+
+.npcManualStats {
+  display: block;
+  align-items: center;
+  width: auto;
+}
+
+.labelWraps {
+  display: inline-block;
+  margin: 1em auto;
+}
