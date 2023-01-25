@@ -1,0 +1,55 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  color: lightgray;
+}
+
+body {
+  margin: 0;
+  background: #5E35B1;
+  font-family: Apple Chancery;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid lightgray
+}
+
+fieldset:last-of-type {
+  border-bottom: 3px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  min-height: 2em;
+}
+
+input[type="button"] {
+  display: block;
+  width: 30%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: darkgray;
+  border-color: lightgray;
+  min-width: 300px;
+}
