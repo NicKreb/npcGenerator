@@ -7,39 +7,70 @@
   <title>NPC Generator</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-  <h1>
+<h1>
   NPC Generator
-  </h1>
-  <p>
-    Let's create life!
-  </p>
-  <fieldset>
-    <label for="npcNameField">
+</h1>
+<p>
+  Let's create life!
+</p>
+<fieldset>
+  <div class="labelWraps">
+    <label for="npcNameField" class="npcManualStats">
       Give them a name:
-    <input id="npcNameField" name="npcNameField" type="text">     </label>
-    <label for="npcAgeField">
-    How old are they?
-      <input id="npcAgeField" name="npcAgeField" type="number">
+      <div>
+        <input id="npcNameField" name="npcNameField" type="text">
+      </div>
     </label>
-    <label for="npcGenderField">
+    <label for="npcAgeField" class="npcManualStats">
+      How old are they?
+      <div>
+        <input id="npcAgeField" name="npcAgeField" type="number">
+      </div>
+    </label>
+    <label for="npcGenderField" class="npcManualStats">
       What is their Gender Identity?
-      <input id="npcGenderField" name="npcGenderField" type="text">
+      <div>
+        <input id="npcGenderField" name="npcGenderField" type="text">
+      </div>
     </label>
-    <label for="personalityField">
+    <label for="personalityField" class="npcManualStats">
       What kind of Personality do they have?
-      <input id="personalityField" name="personalityField" type="text">
+      <div>
+        <input id="personalityField" name="personalityField" type="text">
+      </div>
     </label>
-    <label for="hobbiesField">
+    <label for="hobbiesField" class="npcManualStats">
       What are some of their hobbies?
-      <input type="text" name="hobbiesField" id="hobbiesField">
+      <div>
+        <input type="text" name="hobbiesField" id="hobbiesField">
+      </div>
     </label>
-  </fieldset>
-  <div>
-    <input type="button" value="Give Life Button">
-    <input type="button" value="Randomly Generate Life"
   </div>
-<body>
-  <p>Here is where we will have a short list of 3 generated NPCs or One made one.</p>
+</fieldset>
+<div></div>
+<input type="button" value="Give Life Button">
+<input type="button" value="Randomly Generate Life" <body>
+<p>Here is where we will have a short list of 3 generated NPCs or One made one.</p>
+</body>
+<!--new additions below-->
+
+<body id="npcGeneratedArea" name="npcGeneratedArea">
+  <ul>
+    <!--Here we will create 3 listed items which will be the NPCs, where within each will be additional lists with the values listed in the questionarre above.-->
+    <li class="generatedNPC">
+      Ball guzzler III
+    </li>
+    <li class="generatedNPC">
+      Ball guzzler III
+    </li>
+    <li class="generatedNPC">
+      Ball guzzler III
+    </li>
+    <!--Each listed item should also be wrapped around in a border to further help separate them from each other for easier readability-->
+  </ul>
 </body>
 
 </html>
+<!--added a new body, with listed elements, and also put a dive around the npcManualStat labels at the top.
+
+Current goal is to center align all of the npcManualStat labals AND the generatedNPC list-->
