@@ -7,10 +7,11 @@
   <title>NPC Generator</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-<h1>
+<body>
+<h1 class="pageHeader1">
   NPC Generator
 </h1>
-<p>
+<p class="letsCreateLife">
   Let's create life!
 </p>
 <fieldset>
@@ -49,26 +50,29 @@
 </fieldset>
 <div></div>
 <input type="button" value="Give Life Button">
-<input type="button" value="Randomly Generate Life" <body>
-<p>Here is where we will have a short list of 3 generated NPCs or One made one.</p>
-</body>
+<input type="button" value="Randomly Generate Life" 
 <!--new additions below-->
-
-<body id="npcGeneratedArea" name="npcGeneratedArea">
+</body>
+  <div class="spacer"></div>
+<body id="npcGeneratedArea" name="npcGeneratedArea" class="npcGBG">
+  <p>Here is where we will have a short list of 3 generated NPCs or One made one.</p>
   <ul>
     <!--Here we will create 3 listed items which will be the NPCs, where within each will be additional lists with the values listed in the questionarre above.-->
     <li class="generatedNPC">
       Ball guzzler III
     </li>
+    <div class="spacer"></div>
     <li class="generatedNPC">
       Ball guzzler III
     </li>
+    <div class="spacer"></div>
     <li class="generatedNPC">
       Ball guzzler III
     </li>
     <!--Each listed item should also be wrapped around in a border to further help separate them from each other for easier readability-->
   </ul>
 </body>
+  <div class="spacer"></div>
 
 </html>
 <!--added a new body, with listed elements, and also put a dive around the npcManualStat labels at the top.
