@@ -7,3 +7,62 @@
 5. Each NPC should have 3 Hobbies randomly chosen from an array.
 6. Pressing any button should wipe the generated area clean and generate new random profiles, or manually entered profiles.
 */
+
+const npcHobbiesArr = [
+  "Sports",
+  "Exercise",
+  "Writing",
+  "Painting",
+  'Brawling',
+  "Strength Contests",
+  "Chess",
+  "Board Games",
+  "Singing",
+  "Crafts"
+];
+
+const npcPersonalityArr = [
+  "Argumentative",
+  "Passionate",
+  "Calm",
+  "Sleepy",
+  "Bubbly",
+  "Arrogant",
+  "Happy",
+  "Sweet",
+  "Loving",
+  "Shy",
+  "Loud"
+];
+
+const npcGenIdArr = [
+  "Female",
+  "Non-binary",
+  "Genderfluid",
+  "Male"
+];
+
+let firstCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let characters = 'abcdefghijklmnopqrstuvwxyz';
+let generatedNpcResults = '<li>' + npcNameResult + '</li>'\n + 
+  '<li>' + npcAge + '</li>'\n + 
+  '<li>' + npcGenIdResult + '</li>'\n + 
+  '<li>' + npcPersonalityResult + '</li>'\n + 
+  '<li>' + npcHobbyResult + '</li>';
+
+let npcGenIdResult = npcGenIdArr[Math.floor(Math.random() * npcGenIdArr.length)];
+let npcAge = Math.floor(Math.random() * 100) + 1;
+let npcPersonalityResult = npcPersonalityArr[Math.floor(Math.random() * npcPersonalityArr.length)];
+let npcHobbyResult = npcHobbiesArr[Math.floor(Math.random() * npcHobbiesArr.length)] + npcHobbiesArr[Math.floor(Math.random() * npcHobbiesArr.length) + 2]; 
+
+let npcNameResult = function() {
+    let NpcNameFirstLetter = characters.charAt(Math.floor(Math.Random() * firstCharacters.length))
+    for (j = 0; j < 5; j++) {
+      npcNameFirstLetter += characters.charAt(Math.floor(Math.Random() * characters.length))
+    }
+    return npcNameResult;
+};
+
+document.getElementById(randomGenerateButton).onclick = function(generatedNPCResults) {
+  //input results in to 3 separate list elements within the npc generation area.
+};
