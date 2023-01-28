@@ -7,7 +7,7 @@ html, body {
 body {
   font-family: Apple Chancery;
   font-size: 16px;
-  background: linear-gradient( #5E35B1 0%,#3e1d70 100% );
+  background: #3e1d70;
 }
 
 h1, p {
