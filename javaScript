@@ -83,9 +83,9 @@ let npcHobbyResult = npcHobbiesArr[Math.floor(Math.random() * npcHobbiesArr.leng
 let npcNameResult = npcNameList[Math.floor(Math.random() * npcNameList.length)];
   
 let generateNpcProfiles = function() {
-  document.getElementById("generatedNpcResultsA").innerHTML = npcNameResult + "<br>" + npcAge + "<br>" + npcHobbyResult + "<br>" + npcPersonalityResult;
-  document.getElementById("generatedNpcResultsB").innerHTML = npcNameResult + "<br>" + npcAge + "<br>" + npcHobbyResult + "<br>" + npcPersonalityResult;
-  document.getElementById("generatedNpcResultsC").innerHTML = npcNameResult + "<br>" + npcAge + "<br>" + npcHobbyResult + "<br>" + npcPersonalityResult;
+  document.getElementById("generatedNpcResultsA").innerHTML = npcNameResult + "<br>" + npcAge + "<br>" + npcGenIdResult + "<br>" + npcHobbyResult + "<br>" + npcPersonalityResult;
+  document.getElementById("generatedNpcResultsB").innerHTML = npcNameResult + "<br>" + npcAge + "<br>" + npcGenIdResult + "<br>" + npcHobbyResult + "<br>" + npcPersonalityResult;
+  document.getElementById("generatedNpcResultsC").innerHTML = npcNameResult + "<br>" + npcAge + "<br>" + npcGenIdResult + "<br>" + npcHobbyResult + "<br>" + npcPersonalityResult;
 };
 
 console.log(npcNameResult);
