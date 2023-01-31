@@ -8,84 +8,68 @@
 6. Pressing any button should wipe the generated area clean and generate new random profiles, or manually entered profiles.
 */
 
-const npcHobbiesArr = [
-  "Sports",
-  "Exercise",
-  "Writing",
-  "Painting",
-  'Brawling',
-  "Strength Contests",
-  "Chess",
-  "Board Games",
-  "Singing",
-  "Crafts"
-];
+let npcHobbiesArr = [
+  "Sports", "Exercise", "Writing", "Painting", "Brawling", "Strength Contests", "Chess", "Board Games", "Singing", "Crafts"
+]
 
-const npcPersonalityArr = [
-  "Argumentative",
-  "Passionate",
-  "Calm",
-  "Sleepy",
-  "Bubbly",
-  "Arrogant",
-  "Happy",
-  "Sweet",
-  "Loving",
-  "Shy",
-  "Loud"
-];
+let npcPersonalityArr = [
+   "Argumentative", "Passionate", "Calm", "Sleepy", "Bubbly", "Arrogant",   "Happy", "Sweet", "Loving", "Shy", "Loud"
+]
 
-const npcGenIdArr = [
-  "Female",
-  "Non-binary",
-  "Genderfluid",
-  "Male"
-];
+let npcGenIdArr = [
+  "Female", "Non-binary", "Genderfluid", "Male"
+]
 
-const npcNameList = [
-  "Zahir",
-  "Saphirre",
-  "Amare",
-  "Zenobia",
-  "Atwood",
-  "Yzebel",
-  "Brigette",
-  "Kester",
-  "Kyle",
-  "David",
-  "Ricky",
-  "Mike",
-  "J.J.",
-  "Jax",
-  "Katy",
-  "Suyin",
-  "Quid",
-  "Salvos",
-  "Ruvia",
-  "Osias",
-  "Shiloh",
-  "Pauldron",
-  "Falfir",
-  "Sharn",
-  "Aura",
-  "Bubbles",
-  "Laersdok"
-];
+let npcNameList = [ 
+  "Zahir", "Saphirre", "Amare", "Zenobia", "Atwood", "Yzebel",  "Brigette", "Kester", "Kyle", "David", "Ricky", "Mike", "J.J.", "Katy",  "Suyin", "Quid",
+  "Salvos", "Ruvia", "Osias", "Shiloh", "Pauldron",  "Falfir", "Sharn", "Aura", "Bubbles", "Laersdok"
+]
 
-let npcGenIdResult = npcGenIdArr[Math.floor(Math.random() * npcGenIdArr.length)];
-
-let npcAge = Math.floor(Math.random() * 100) + 1;
-
-let npcPersonalityResult = npcPersonalityArr[Math.floor(Math.random() * npcPersonalityArr.length)];
-
-let npcHobbyResult = npcHobbiesArr[Math.floor(Math.random() * npcHobbiesArr.length)] + ", " + npcHobbiesArr[Math.floor(Math.random() * npcHobbiesArr.length) + 2]; 
-
-let npcNameResult = npcNameList[Math.floor(Math.random() * npcNameList.length)];
+function generateNpcProfiles() {
+  document.getElementById("generatedNpcResultsA").innerHTML = 
+    npcNameList[Math.floor(Math.random() * npcNameList.length)]
+    + "<br>" + 
+    Math.floor(Math.random() * 100) 
+    + "<br>" +
+    npcGenIdArr[Math.floor(Math.random() * npcGenIdArr.length)] 
+    + "<br>" + 
+    npcHobbiesArr[Math.floor(Math.random() * 
+    npcHobbiesArr.length)] 
+    + ", " + 
+    npcHobbiesArr[Math.floor(Math.random() * npcHobbiesArr.length) + 2] 
+    + "<br>" + 
+    npcPersonalityArr[Math.floor(Math.random() * 
+    npcPersonalityArr.length)];
   
-let generateNpcProfiles = function() {
-  document.getElementById("generatedNpcResultsA").innerHTML = npcNameResult + "<br>" + npcAge + "<br>" + npcGenIdResult + "<br>" + npcHobbyResult + "<br>" + npcPersonalityResult;
-  document.getElementById("generatedNpcResultsB").innerHTML = npcNameResult + "<br>" + npcAge + "<br>" + npcGenIdResult + "<br>" + npcHobbyResult + "<br>" + npcPersonalityResult;
-  document.getElementById("generatedNpcResultsC").innerHTML = npcNameResult + "<br>" + npcAge + "<br>" + npcGenIdResult + "<br>" + npcHobbyResult + "<br>" + npcPersonalityResult;
+  document.getElementById("generatedNpcResultsB").innerHTML = 
+    npcNameList[Math.floor(Math.random() * npcNameList.length)]
+    + "<br>" + 
+    Math.floor(Math.random() * 100) 
+    + "<br>" +
+    npcGenIdArr[Math.floor(Math.random() * npcGenIdArr.length)] 
+    + "<br>" + 
+    npcHobbiesArr[Math.floor(Math.random() * 
+    npcHobbiesArr.length)] 
+    + ", " + 
+    npcHobbiesArr[Math.floor(Math.random() * npcHobbiesArr.length) + 2] 
+    + "<br>" + 
+    npcPersonalityArr[Math.floor(Math.random() * 
+    npcPersonalityArr.length)];
+  
+  document.getElementById("generatedNpcResultsC").innerHTML = 
+    npcNameList[Math.floor(Math.random() * npcNameList.length)]
+    + "<br>" + 
+    Math.floor(Math.random() * 100) 
+    + "<br>" +
+    npcGenIdArr[Math.floor(Math.random() * npcGenIdArr.length)] 
+    + "<br>" + 
+    npcHobbiesArr[Math.floor(Math.random() * 
+    npcHobbiesArr.length)] 
+    + ", " + 
+    npcHobbiesArr[Math.floor(Math.random() * npcHobbiesArr.length) + 2] 
+    + "<br>" + 
+    npcPersonalityArr[Math.floor(Math.random() * 
+    npcPersonalityArr.length)];
 };
 
 console.log(npcNameResult);
