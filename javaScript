@@ -42,28 +42,48 @@ const npcGenIdArr = [
   "Male"
 ];
 
-let firstCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-let characters = 'abcdefghijklmnopqrstuvwxyz';
+const npcNameList = [
+  "Zahir",
+  "Saphirre",
+  "Amare",
+  "Zenobia",
+  "Atwood",
+  "Yzebel",
+  "Brigette",
+  "Kester",
+  "Kyle",
+  "David",
+  "Ricky",
+  "Mike",
+  "J.J.",
+  "Jax",
+  "Katy",
+  "Suyin",
+  "Quid",
+  "Salvos",
+  "Ruvia",
+  "Osias",
+  "Shiloh",
+  "Pauldron",
+  "Falfir",
+  "Sharn",
+  "Aura",
+  "Bubbles",
+  "Laersdok"
+];
 
 let npcGenIdResult = npcGenIdArr[Math.floor(Math.random() * npcGenIdArr.length)];
+
 let npcAge = Math.floor(Math.random() * 100) + 1;
+
 let npcPersonalityResult = npcPersonalityArr[Math.floor(Math.random() * npcPersonalityArr.length)];
-let npcHobbyResult = npcHobbiesArr[Math.floor(Math.random() * npcHobbiesArr.length)] + npcHobbiesArr[Math.floor(Math.random() * npcHobbiesArr.length) + 2]; 
 
-let npcNameResult = function() {
-  let npcNameFirstLetter = firstCharacters.charAt(Math.floor(Math.random() * firstCharacters.length));
-  let nameSecondHalf = function() {
-    for (j = 0; j < 5; j++) {
-      npcNameFirstLetter += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
-  };
+let npcHobbyResult = npcHobbiesArr[Math.floor(Math.random() * npcHobbiesArr.length)] + ", " + npcHobbiesArr[Math.floor(Math.random() * npcHobbiesArr.length) + 2]; 
+
+let npcNameResult = npcNameList[Math.floor(Math.random() * npcNameList.length)];
   
-  let result = npcNameFirstLetter + nameSecondHalf;
-    return result;
-};
-
 let generateNpcProfiles = function() {
-  document.getElementById("generatedNpcResultsA").innerHTML = npcNameResult;
+  document.getElementById("generatedNpcResultsA").innerHTML = npcNameResult + " " + npcAge + " " + npcHobbyResult + " " + npcPersonalityResult;
   document.getElementById("generatedNpcResultsB").innerHTML = npcNameResult;
   document.getElementById("generatedNpcResultsC").innerHTML = npcNameResult;
 };
